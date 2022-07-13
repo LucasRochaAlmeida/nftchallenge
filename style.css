@@ -11,18 +11,29 @@ body{
     flex-direction: column;
 }
 
+.font{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+}
+
 #box{
-    width: 300px;
+    width: 280px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
     padding: 20px 10px; 
     margin: 20px;
+    box-shadow:  0px 7px 26px 0px rgba(34, 35, 41, 0.81);
 }
 
 #content{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0px 11px;
 }
 
 #dice{
@@ -35,13 +46,26 @@ body{
     justify-content: space-between;
 }
 
-.separator{
+.separator{ /* mexe nos filhos da div */
     display: flex;
     align-items: center;
-}
-
-.separator div:nth-child(1), .separator div:nth-child(3){ /* mexe nos filhos da div */
     background: hsl(215, 32%, 27%);
     width: 100%;
     height: 1px;
+}
+
+#photo{
+    width: 30px;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+@media(max-width: 768px){
+    body{
+        height: 670px;
+    }
 }
